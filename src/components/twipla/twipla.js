@@ -15,7 +15,8 @@ export default function Twipla() {
                 return window.location.href
             }
         });
-        console.log(twiplaWorker.run({tags: {test: 'test_value'}}))
+        const tags = {test: 'test_value_2'}
+        console.log(twiplaWorker.run({tags}))
     }, []);
 
     return <div>Tracking twipla</div>;
